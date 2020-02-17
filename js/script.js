@@ -5,16 +5,24 @@ var blue;
 var rgbColor;
 
 function getRandomNumber() {
-    var number = Math.floor(Math.random() * 256);
-    return number;
+    return Math.floor(Math.random() * 256);
+}
+
+function randomColor() {
+    var color = 'rgb(';
+    color += getRandomNumber() + ',';
+    color += getRandomNumber() + ',';
+    color += getRandomNumber() + ')';
+    return color;
+}
+
+function displayResults(html) {
+    document.write(html);
 }
 
 for (var i = 0; i < 10; i++) {
-    red = getRandomNumber();
-    green = getRandomNumber();
-    blue = getRandomNumber();
-    rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+    rgbColor = randomColor();
     html += '<div style="background-color:' + rgbColor + '"></div>';
 }
 
-document.write(html);
+displayResults(html);
