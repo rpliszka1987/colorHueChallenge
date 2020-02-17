@@ -1,7 +1,4 @@
 var html = '';
-var red;
-var green;
-var blue;
 var rgbColor;
 
 function getRandomNumber() {
