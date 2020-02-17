@@ -1,0 +1,1 @@
+This is random color generator. Generates random RGB colors and displays 10 different color circles at a time.
